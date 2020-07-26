@@ -1,0 +1,25 @@
+@mixin selectColor($color, $isLightn, $lightAmount) {
+  @if $isLightn == true {
+    background-color: lighten($color: $color, $amount: $lightAmount);
+  } @else {
+    background-color: $color;
+  }
+}
+
+%btn {
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn-primary {
+  @extend %btn;
+  margin-right: 5px;
+  @include selectColor($primary-color, true, 10);
+}
+
+.btn-secondary {
+  @extend %btn;
+  @include selectColor($secondary-color, false, 10);
+}

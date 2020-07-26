@@ -1,0 +1,21 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+$sizes: (1, 2, 3, 4, 5);
+@each $size in $sizes {
+  .m-#{$size} {
+    margin: #{$size}rem;
+  }
+
+  .my-#{$size} {
+    margin-top: #{$size}rem;
+    margin-bottom: #{$size}rem;
+  }
+
+  .mx-#{$size} {
+    margin-left: #{$size}rem;
+    margin-right: #{$size}rem;
+  }
+}

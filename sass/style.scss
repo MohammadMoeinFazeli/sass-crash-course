@@ -1,0 +1,61 @@
+@import "config";
+@import "utilitize";
+@import "buttons";
+
+.showcase {
+  width: 100%;
+  height: 550px;
+  background-color: $primary-color;
+}
+
+nav {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    color: #fff;
+    font-size: 30px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      padding: 0 10px;
+      font-size: 20px;
+      a {
+        color: #fff;
+      }
+
+      &:hover a {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.showcase-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    width: 50%;
+  }
+
+  div {
+    h1 {
+      font-size: 55px;
+      color: #fff;
+    }
+
+    p {
+      font-size: 17px;
+      color: #fff;
+    }
+  }
+}
